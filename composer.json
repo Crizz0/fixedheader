@@ -1,0 +1,29 @@
+{
+	"name": "crizzo/fixedheader",
+	"type": "phpbb-extension",
+	"description": "This phpBB extension will fix the header to the browser windows top on scrolling, so that the user can reach all the menu elements.",
+	"homepage": "https://github.com/Crizz0/ipanonym",
+	"version": "1.0.0-dev",
+	"time": "2021-10-01",
+	"license": "GPL-2.0-only",
+	"authors": [{
+			"name": "Christian Schnegelberger",
+			"email": "kontakt@crizzo.de",
+			"homepage": "https://www.crizzo.de",
+			"role": "Developer/Founder"
+		}],
+	"require": {
+		"php": ">=5.4.7"
+	},
+	"extra": {
+		"display-name": "Fixed header",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.3.4, <4.0.0@dev"
+		},
+		"version-check": {
+			"host": "www.crizzo.de",
+			"directory": "/phpbbextversion",
+			"filename": "phpbb-ipanonym.json"
+		}
+	}
+}
