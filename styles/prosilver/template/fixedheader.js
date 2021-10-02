@@ -4,12 +4,14 @@ $(function () {
 	let $pageHeader = $('#page-header');
 	let yOffset = 0;
 	let setpoint = 0;
+	let scrollpos = 150;
 
 	$(window).scroll(function () {
 		yOffset = $(window).scrollTop();
-		if (yOffset >= 50) {
+
+		if (yOffset >= scrollpos) {
 			setpoint = 1;
-		} else if (yOffset < 50) {
+		} else {
 			setpoint = 0;
 		}
 
