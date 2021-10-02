@@ -3,13 +3,49 @@
 #page-header.fixedheader {
 	position: fixed;
 	left: 0;
-	top: 0;
-	z-index: 300;
 	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 300;
+
 }
 
+#page-header.fixedheader .headerbar,
+#page-header.fixedheader .navbar {
+	border-radius: 0;
+}
 
+#page-header.fixedheader .search-box {
+	float: left;
+	margin-top: 3px;
+}
+
+#page-header.fixedheader .headerbar {
+	height: 32px;
+}
+
+#page-header.fixedheader .site-description {
+	background-size: contain;
+	background-position: 10% 50%;
+	height: auto;
+	width: 20%;
+}
+
+#page-header.fixedheader .site-description a.logo {
+	padding: 5px 10px 0 10px;
+	margin: 0;
+	width: 100%;
+}
+
+#page-header.fixedheader .site-description .site_logo {
+	background-size: contain;
+	height: 25px;
+}
 /* Mobile  */
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
-
+	#page-header.fixedheader .search-box {
+		float: right;
+		margin-top: 3px;
+		margin-right: 10%;
+	}
 }
